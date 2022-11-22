@@ -58,26 +58,26 @@ Using the immigration and demographics datasets, we will to create a star schema
   
 ### Dimension Tables
 
-- 2. date - users in the app
-     |-- arrdate: date (nullable = true)
-     |-- arrival_day: integer (nullable = true)
-     |-- arrival_week: integer (nullable = true)
-     |-- arrival_month: integer (nullable = true)
-     |-- arrival_year: integer (nullable = true)
-     |-- arrival_weekday: integer (nullable = true)
-- 3. demographics - songs in music database
-     |-- City: string (nullable = true)
-     |-- State: string (nullable = true)
-     |-- median_age: double (nullable = true)
-     |-- male_population: integer (nullable = true)
-     |-- female_population: integer (nullable = true)
-     |-- total_population: integer (nullable = true)
-     |-- n_veterans: integer (nullable = true)
-     |-- foreign_born: integer (nullable = true)
-     |-- avg_household_size: double (nullable = true)
-     |-- state_code: string (nullable = true)
-     |-- Race: string (nullable = true)
-     |-- Count: integer (nullable = true)
+- 2. date - users in the app <br>
+     |-- arrdate: date (nullable = true) <br>
+     |-- arrival_day: integer (nullable = true) <br>
+     |-- arrival_week: integer (nullable = true) <br>
+     |-- arrival_month: integer (nullable = true) <br>
+     |-- arrival_year: integer (nullable = true) <br>
+     |-- arrival_weekday: integer (nullable = true) <br>
+- 3. demographics - songs in music database <br>
+     |-- City: string (nullable = true) <br>
+     |-- State: string (nullable = true) <br>
+     |-- median_age: double (nullable = true) <br>
+     |-- male_population: integer (nullable = true) <br>
+     |-- female_population: integer (nullable = true) <br>
+     |-- total_population: integer (nullable = true) <br>
+     |-- n_veterans: integer (nullable = true) <br>
+     |-- foreign_born: integer (nullable = true) <br>
+     |-- avg_household_size: double (nullable = true) <br>
+     |-- state_code: string (nullable = true) <br>
+     |-- Race: string (nullable = true) <br>
+     |-- Count: integer (nullable = true) <br>
 
 ***
 
