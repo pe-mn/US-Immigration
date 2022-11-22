@@ -65,6 +65,7 @@ Using the immigration and demographics datasets, we will to create a star schema
      |-- arrival_month: integer (nullable = true) <br>
      |-- arrival_year: integer (nullable = true) <br>
      |-- arrival_weekday: integer (nullable = true) <br>
+     
 - 3. demographics - songs in music database <br>
      |-- City: string (nullable = true) <br>
      |-- State: string (nullable = true) <br>
