@@ -33,9 +33,10 @@ Using the song and log datasets, you'll need to create a star schema optimized f
 ### Fact Table
 
 - 1. immigration 
-- | Col | Description
+N | Col | Description
 --- | --- | --- 
 1|cicid|Application number / Citizenship and Immigration C...
+
 |**2**|**arrival_year**|**Arrival Year**|
 |**3**|**arrival_month**|**Arrival Month**|
 |4|citizinship|Country Immigrant is Originally From (country of citizernship, I think!)|
