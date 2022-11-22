@@ -79,10 +79,9 @@ Using the immigration and demographics datasets, we will to create a star schema
      |-- Race: string (nullable = true)
      |-- Count: integer (nullable = true)
 
+***
 
-***
 ## Why Spark?
-***
 - Consdiering the significant size of the immigration dataset (~ 3 million rows) for only a month, the most sensible technology choice for such an approach would be spark, especially if we were to process data over a longer period of time.
 
 - Apache spark was used because of:
