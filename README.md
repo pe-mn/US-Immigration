@@ -29,10 +29,11 @@
 Using the immigration and demographics datasets, we will to create a star schema optimized for queries on immigration analysis. This includes the following tables.
 
 ### Fact Table
+Since we're interested in the flow of travellers through the united states. The i94 data will serve as our fact table. 
 
 - 1. immigration 
 
-| N | Col | Description|
+| - | Col | Description|
 | --- | ---: | :---| 
 |1|cicid|Application number / Citizenship and Immigration C...|
 |**2**|**arrival_year**|**Arrival Year**|
@@ -58,15 +59,15 @@ Using the immigration and demographics datasets, we will to create a star schema
   
 ### Dimension Tables
 
-- 2. date - users in the app <br>
+- 2. date - to aggregate the data suing various time units <br>
      |-- arrdate: date (nullable = true) <br>
      |-- arrival_day: integer (nullable = true) <br>
      |-- arrival_week: integer (nullable = true) <br>
      |-- arrival_month: integer (nullable = true) <br>
      |-- arrival_year: integer (nullable = true) <br>
      |-- arrival_weekday: integer (nullable = true) <br>
-     
-- 3. demographics - songs in music database <br>
+<br> <br> 
+- 3. demographics - To look at the demographic data of the areas with the most travelers <br>
      |-- City: string (nullable = true) <br>
      |-- State: string (nullable = true) <br>
      |-- median_age: double (nullable = true) <br>
@@ -79,7 +80,7 @@ Using the immigration and demographics datasets, we will to create a star schema
      |-- state_code: string (nullable = true) <br>
      |-- Race: string (nullable = true) <br>
      |-- Count: integer (nullable = true) <br>
-
+     
 ***
 
 ## Why Spark?
