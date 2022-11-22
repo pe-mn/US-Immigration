@@ -1,7 +1,5 @@
-# Project: United States Immigration 
-***
-### Datasets
-***
+# Project: United States Immigration
+## Datasets
 <a href='https://travel.trade.gov/research/reports/i94/historical/2016.html'><b>I94 Immigration Data:</b></a>
 - This data comes from the US National Tourism and Trade Office. 
 - A data dictionary is included in the workspace. 
@@ -26,25 +24,21 @@
 
 ***
 
-# Schema Used For Analysis
+## Schema Used For Analysis
 
-Using the song and log datasets, you'll need to create a star schema optimized for queries on song play analysis. This includes the following tables.
+Using the immigration and demographics datasets, we will to create a star schema optimized for queries on immigration analysis. This includes the following tables.
 
 ### Fact Table
 
 - 1. immigration 
 
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
-
 | N | Col | Description|
-| --- | ---: | ---:| 
+| --- | ---: | :---| 
 |1|cicid|Application number / Citizenship and Immigration C...|
 |**2**|**arrival_year**|**Arrival Year**|
 |**3**|**arrival_month**|**Arrival Month**|
-|4|citizinship|Country Immigrant is Originally From (country of citizernship, I think!)|
-|5|residence|Country of Immigrant Residence (coutnry of residence, I think!)|
+|4|citizinship|Country Immigrant is Originally From (country of citizernship)|
+|5|residence|Country of Immigrant Residence|
 |6|port|AIR / SEAPORT of entry into the US<br> ('XXX': 'NOT REPORTED/UNKNOWN' - '888': 'UNIDENTIFED AIR / SEAPORT' -'UNK': 'UNKNOWN POE')|
 |**7**|**arrival_date**|**Arrival Date to USA**|
 |8|travel_mode| (1: 'Air' - 2: 'Sea' - 3: 'Land' -  9: 'Not reported') |
@@ -96,9 +90,8 @@ Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
     - Apache Spark offers a lightning-fast unified analytics engine for big data.
     - Spark has easy-to-use APIs for operating on large datasets
 
-***
+
 ## Other Scenarios
-***
 **IF the data was increased by 100x**
 - Spark can handle the increase but we would consider increasing the number of nodes in our cluster.
 - We would still use spark as it as our data processing platform since it is the best suited platform for very large datasets.
@@ -113,6 +106,5 @@ Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
 - We would move our analytics database into Amazon Redshift
 - Once the data is ready to be consumed, it would be stored in a postgres database on a redshift cluster that easily supports multiuser access.
 
-***
 ***
 
