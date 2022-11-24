@@ -1,4 +1,12 @@
 # Project: United States Immigration
+
+## The project follows the follow steps:
+- Step 1: Scope the Project and Gather Data
+- Step 2: Explore and Assess the Data
+- Step 3: Define the Data Model
+- Step 4: Run ETL to Model the Data
+- Step 5: Complete Project Write Up
+
 ## Datasets
 <a href='https://travel.trade.gov/research/reports/i94/historical/2016.html'><b>I94 Immigration Data:</b></a>
 - This data comes from the US National Tourism and Trade Office. 
@@ -66,7 +74,8 @@ Since we're interested in the flow of travellers through the united states. The 
      |-- arrival_month: integer (nullable = true) <br>
      |-- arrival_year: integer (nullable = true) <br>
      |-- arrival_weekday: integer (nullable = true) <br>
-<br> <br> 
+
+
 - 3. demographics - To look at the demographic data of the areas with the most travelers <br>
      |-- City: string (nullable = true) <br>
      |-- State: string (nullable = true) <br>
@@ -80,7 +89,7 @@ Since we're interested in the flow of travellers through the united states. The 
      |-- state_code: string (nullable = true) <br>
      |-- Race: string (nullable = true) <br>
      |-- Count: integer (nullable = true) <br>
-     
+
 ***
 
 ## Why Spark?
@@ -108,4 +117,3 @@ Since we're interested in the flow of travellers through the united states. The 
 - Once the data is ready to be consumed, it would be stored in a postgres database on a redshift cluster that easily supports multiuser access.
 
 ***
-
