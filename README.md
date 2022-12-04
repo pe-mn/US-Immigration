@@ -34,7 +34,9 @@
 
 ## Schema Used For Analysis
 
-Using the immigration and demographics datasets, we will to create a star schema optimized for queries on immigration analysis. This includes the following tables.
+Using the immigration and demographics datasets, we will create a star schema optimized for queries on immigration analysis. This includes the following tables.
+
+<img alt="SCHEMA" src="US-Immigration-Schema.png" />
 
 ### Fact Table
 Since we're interested in the flow of travellers through the united states. The i94 data will serve as our fact table. 
@@ -49,19 +51,21 @@ Since we're interested in the flow of travellers through the united states. The 
 |4|citizinship|Country Immigrant is Originally From (country of citizernship)|
 |5|residence|Country of Immigrant Residence|
 |6|port|AIR / SEAPORT of entry into the US<br> ('XXX': 'NOT REPORTED/UNKNOWN' - '888': 'UNIDENTIFED AIR / SEAPORT' -'UNK': 'UNKNOWN POE')|
-|**7**|**arrival_date**|**Arrival Date to USA**|
-|8|travel_mode| (1: 'Air' - 2: 'Sea' - 3: 'Land' -  9: 'Not reported') |
-|9|us_state|U.S. State / Address of Immigrant Inside USA <br> ('99'='All Other Codes') <br> actually representing the final address of the migrants, that is where they currently live in the US.|
-|**10**|**departure_date**|**Departure Date from the USA**|
-|**11**|**age**|**Age of Respondent in Years**|
-|12|visa_category|Visa codes collapsed into three categories <br> (Business - Pleasure - Student)|
-|13|dep_issued_visa|Department of State where where Visa was issued - CIC does not use <br> This is where your visa was issued. It will be a U.S. embassy or U.S. consulate.|
-|**14**|**visa_expiration_date**|**Character Date Field - Date to which admitted to U.S. (allowed to stay until) - CIC does not use <br>  visa expiration date  <br>**|
-|15|gender|Non-immigrant sex|
-|16|airline|Airline used to arrive in U.S.|
-|17|admission_number|Admission Number - An 11-digit number assigned to an alien when he enters the Unites States.|
-|18|flight_number|Flight number of Airline used to arrive in U.S.|
-|19|visa_type|VISATYPE - Class of admission legally admitting the non-immigrant to temporarily stay in U.S.|
+|7|port_city| port city |
+|8|port_state| port state |
+|**9**|**arrival_date**|**Arrival Date to USA**|
+|10|travel_mode| (1: 'Air' - 2: 'Sea' - 3: 'Land' -  9: 'Not reported') |
+|11|us_state|U.S. State / Address of Immigrant Inside USA <br> ('99'='All Other Codes') <br> actually representing the final address of the migrants, that is where they currently live in the US.|
+|**12**|**departure_date**|**Departure Date from the USA**|
+|**13**|**age**|**Age of Respondent in Years**|
+|14|visa_category|Visa codes collapsed into three categories <br> (Business - Pleasure - Student)|
+|15|dep_issued_visa|Department of State where where Visa was issued - CIC does not use <br> This is where your visa was issued. It will be a U.S. embassy or U.S. consulate.|
+|**16**|**visa_expiration_date**|**Character Date Field - Date to which admitted to U.S. (allowed to stay until) - CIC does not use <br>  visa expiration date  <br>**|
+|17|gender|Non-immigrant sex|
+|18|airline|Airline used to arrive in U.S.|
+|19|admission_number|Admission Number - An 11-digit number assigned to an alien when he enters the Unites States.|
+|20|flight_number|Flight number of Airline used to arrive in U.S.|
+|21|visa_type|VISATYPE - Class of admission legally admitting the non-immigrant to temporarily stay in U.S.|
 
 
   
